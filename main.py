@@ -5,9 +5,9 @@ from utils.save_to_document import save_document
 from starlette.responses import JSONResponse
 import os
 import datetime
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from pydantic import BaseModel
-load_dotenv()
+load_dotenv(find_dotenv())
 
 app = FastAPI()
 
